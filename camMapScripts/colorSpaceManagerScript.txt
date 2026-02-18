@@ -1,8 +1,0 @@
-def change_colorspace(cs):
-    fnode_selection = cmds.ls(selection=True)
-    
-    for fnode in fnode_selection:
-        cmds.setAttr(fnode + ".cs", cs, type="string")
-
-
-change_colorspace("Raw")

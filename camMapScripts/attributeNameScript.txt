@@ -1,4 +1,0 @@
-result = dict(zip(cmds.listAttr(), cmds.listAttr(sn=True)))
-result = dict(sorted(result.items()))
-for k, v in result.items():
-    print(k + " : " + v)
