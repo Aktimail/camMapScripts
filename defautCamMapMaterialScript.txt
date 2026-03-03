@@ -54,7 +54,7 @@ def defaultMat(filePath, cameraRef="camProjShape", colorSpace="Raw", ignoreCsFil
         
     cmds.setAttr(projection + ".projType", 8)
     cmds.connectAttr(cameraRef + ".message", projection + ".linkedCamera", force=True)
-    cmds.setAttr(projection + ".fitType", 2)
+    cmds.setAttr(projection + ".fitType", 1)  # je crois que 1 = fit film gate, 2 = resolution gate, a verifier
     
     return sg
 
@@ -75,3 +75,4 @@ def assignDefaultMat(cameraRef="camProjShape", colorSpace="Raw", ignoreCsFileRul
         
     
 assignDefaultMat()
+
